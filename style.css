@@ -285,3 +285,53 @@ img {
       order: -1;
     }
   }
+
+
+  /* Qualidade */
+
+.qualidade {
+    max-width: 960px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .qualidade-item {
+    flex: 1 1 300px;
+    margin: 20px 10px;
+  }
+  
+  .qualidade-item h2 {
+    font-size: 2.25em;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+  }
+  
+  .qualidade-item h2::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .inteligente::before,
+  .transparente::before {
+    background: #ae81ff;
+  }
+  
+  .compacto::before,
+  .opaco::before {
+    background: #f9265e;
+  }
+  
+  .economico::before,
+  .sustentavel::before {
+    background: #66d9eb;
+  }
+  
+  .qualidade-item p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
+  }
